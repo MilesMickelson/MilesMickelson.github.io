@@ -12,16 +12,44 @@ export default class NavBar extends React.Component {
         <div className='container-B'>
           <nav id='nav-wrap' aria-label='primary'>
             <a href='#/' aria-current='page'>
-              <img className='nav-icon' id='wheel' src={ wheel } alt='home' rel='preload' />
+              <img
+                className='nav-icon'
+                id='wheel'
+                src={ wheel }
+                title='Home Page'
+                alt='home'
+                rel='preload'
+              />
             </a>
             <a href='#/Projects' aria-current='page'>
-              <img className='nav-icon' id='chest' src={ chest } alt='projects' rel='preload' />
+              <img
+                className='nav-icon'
+                id='chest'
+                src={ chest }
+                title='Projects Page'
+                alt='projects'
+                rel='preload'
+              />
             </a>
             <a href='#/Credentials' aria-current='page'>
-              <img className='nav-icon' id='coin' src={ coin } alt='credentials' rel='preload' />
+              <img
+                className='nav-icon'
+                id='coin'
+                src={ coin }
+                title='Credentials Page'
+                alt='credentials'
+                rel='preload'
+              />
             </a>
             <a href='#/About' aria-current='page'>
-              <img className='nav-icon' id='pirate' src={ pirate } alt='about' rel='preload' />
+              <img
+                className='nav-icon'
+                id='pirate'
+                src={ pirate }
+                title='About Page'
+                alt='about'
+                rel='preload'
+              />
             </a>
           </nav>
         </div>

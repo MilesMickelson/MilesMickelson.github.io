@@ -6,7 +6,16 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(express.static('dist'));
-app.use(compression());
+
+function shouldCompress(req, res) {
+  if (req.headers['x-no-compression']) {
+    return false;
+  }
+  return compression.filter(req, res);
+}
+
+app.use(compression({ filter: shouldCompress }));
+
 
 app.get('/', (req, res) => {
   res.status(200);

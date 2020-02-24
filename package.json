@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --no-cache",
     "watch": "NODE_ENV=production parcel watch src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -43,6 +43,8 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "node-sass": "^4.13.1",
     "parcel": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-plugin-prerender": "^1.4.1",
     "sass": "^1.25.0"
   },
   "dependencies": {
@@ -53,7 +55,6 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "compression": "^1.7.4",
-    "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
