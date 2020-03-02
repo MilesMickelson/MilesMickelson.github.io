@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot, setConfig } from 'react-hot-loader';
 
 import {
   HashRouter as Router,
@@ -16,23 +17,27 @@ import About from './components/about';
 import Credentials from './components/credentials';
 import Footer from './components/footer';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <>
-        <Title />
-        <Sticky style={ { 'z-index': '9999' } }>
-          <NavBar />
-        </Sticky>
-        <Router>
-          <ScrollToTop defer />
-          <Route exact path='/' component={ Home } />
-          <Route exact path='/Projects' component={ Projects } defer />
-          <Route exact path='/About' component={ About } defer />
-          <Route exact path='/Credentials' component={ Credentials } defer />
-        </Router>
-        <Footer />
-      </>
-    );
-  }
-}
+setConfig({
+  showReactDomPatchNotification: false
+});
+
+const App = () => {
+  return (
+    <>
+      <Title />
+      <Sticky style={ { zIndex: '9999' } }>
+        <NavBar />
+      </Sticky>
+      <Router>
+        <ScrollToTop defer />
+        <Route exact path='/' component={ Home } />
+        <Route exact path='/Projects' component={ Projects } defer />
+        <Route exact path='/About' component={ About } defer />
+        <Route exact path='/Credentials' component={ Credentials } defer />
+      </Router>
+      <Footer />
+    </>
+  );
+};
+
+export default hot(module)(App);

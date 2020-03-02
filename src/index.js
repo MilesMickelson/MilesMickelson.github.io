@@ -4,7 +4,6 @@ import App from './app';
 
 import './css/style.scss';
 
-
 render(<App />, document.getElementById('root'));
 
 if (module.hot) {

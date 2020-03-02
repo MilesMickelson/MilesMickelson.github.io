@@ -1,5 +1,9 @@
 {
-	"extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "env": {
     "browser": true,
 		"es6": true,
@@ -29,5 +33,6 @@
             "++": true
           }
     }]
-  }
+  },
+  "parser": "babel-eslint"
 }

@@ -7,7 +7,7 @@ export default class Home extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3>Home</h3>
+          <h3>Hiii</h3>
           <section className='center-wrap'>
             <h4>
               <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />

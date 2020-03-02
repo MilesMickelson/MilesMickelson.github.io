@@ -8,8 +8,8 @@ export default class About extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
+          <h3>About</h3>
           <section className='center-wrap'>
-            <h3>About</h3>
             <h4>
               <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
               Ambition
@@ -39,25 +39,27 @@ export default class About extends React.Component {
               specific goals throughout the planning and execution process.&nbsp;
             </p>
           </section>
-          <section className='center-wrap'>
+          <section classsName='center-wrap'>
             <h4>
               <img className='dagger1' src={ dagger } alt='dagger' />
               Hobbies
               <img className='dagger2' src={ dagger } alt='dagger' />
             </h4>
-            <p>
-              Being a creative and competitive person, I enjoy many activities with&nbsp;
-              friends, family, and others who enjoy the same endeavors as me.&nbsp;
-              Most notably, I am very passionate about playing competitive pool.&nbsp;
-              A well-known player and instructor David Nakano recognized this and&nbsp;
-              has mentored me for years as a best friend. After applying his&nbsp;
-              lessons with daily immersive practice, I competed in the U.S.&nbsp;
-              Open Amateurs Tournament, making it one level away from an inclusive&nbsp;
-              trip to compete in the next tier. I also enjoy reading books, playing&nbsp;
-              games, hiking, and watching movies or shows with my girlfriend,&nbsp;
-              Samantha, The Office is our personal favorite.
-            </p>
-            <img id='pool' src={ pool } alt='playing pool' />
+            <div className='clearfix-wrap'>
+              <img id='pool-pic' src={ pool } alt='playing pool' />
+              <p id='hobbies-info'>
+                Being a creative and competitive person, I enjoy many activities with&nbsp;
+                friends, family, and others who enjoy the same endeavors as me.&nbsp;
+                Most notably, I am very passionate about playing competitive pool.&nbsp;
+                A well-known player and instructor David Nakano recognized this and&nbsp;
+                has mentored me for years as a best friend. After applying his&nbsp;
+                lessons with daily immersive practice, I competed in the U.S.&nbsp;
+                Open Amateurs Tournament, making it one level away from an inclusive&nbsp;
+                trip to compete in the next tier. I also enjoy reading books, playing&nbsp;
+                games, hiking, and watching movies or shows with my girlfriend,&nbsp;
+                Samantha, The Office is our personal favorite.
+              </p>
+            </div>
           </section>
         </main>
       </div>

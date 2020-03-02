@@ -160,6 +160,7 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
+	text-align: center;
 	margin: 15px 0 0 0;
 }
 
@@ -281,6 +282,7 @@ $center: 0px auto;
 
 .dagger2 {
 	width: 43px;
+	vertical-align: middle;
 	transform: rotate(75deg);
 	margin-left: 10px;
 }
@@ -306,6 +308,15 @@ $center: 0px auto;
 	@include col-center;
 	margin-top: 15px;
 	vertical-align: middle;
+	text-align: center;
+}
+
+.clearfix-wrap::after {
+	content: "";
+  clear: both;
+  display: inline-block;
+	vertical-align: top;
+	width: 100%;
 }
 
 /*#endregion Common Styling*/
@@ -453,20 +464,8 @@ $center: 0px auto;
 	border: 2px solid $red;
 	padding: 5px;
 	border-radius: 7px;
+	width: 180px;
 	margin: 10px auto 0;
-	text-align: center;
-}
-
-#speakeasy-wrap::after {
-	content: "";
-  clear: both;
-  display: inline-block;
-	vertical-align: top;
-	width: 100%;
-}
-
-#sub-wrap {
-	text-align: center;
 }
 
 #speakeasy-info {
@@ -478,18 +477,23 @@ $center: 0px auto;
   width: 25vmin;
 	min-width: 110px;
 	max-width: 220px;
-	margin: 5px 10px 0 0;
+	margin: 5px 5px 0 0;
 }
 
 /*#endregion Credentials Page*/
 
 /*#region About Page*/
 
-#pool {
-	width: calc(250px + 30vmin);
-	min-width: 320px;
-	max-width: 550px;
-	margin-top: 10px;
+#hobbies-info {
+  margin-top: 5px;
+}
+
+#pool-pic {
+  float: right;
+  width: 32vmin;
+	min-width: 360px;
+	max-width: 400px;
+	margin-top: 5px;
 }
 
 /*#endregion About Page*/
