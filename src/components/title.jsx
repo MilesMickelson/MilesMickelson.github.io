@@ -9,9 +9,9 @@ export default class Title extends React.Component {
       <div className='container-A'>
         <div className='container-B'>
           <header id='maintitle-wrap'>
-            <h1 className='title' id='title-part1' aria-label='main title'>M</h1>
+            <h1 id='title-part1' aria-label='main title'>M</h1>
             <img id='crossed-keys' src={ crossedKeys } alt='crossed keys' />
-            <h1 className='title' id='title-part2' aria-label='main title'>M</h1>
+            <h1 id='title-part2' aria-label='main title'>M</h1>
           </header>
           <header id='subtitle-wrap'>
             <h2 id='sub-title' aria-label='sub title'>Fullstack&nbsp;Developer</h2>

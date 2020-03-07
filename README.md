@@ -1,44 +1,39 @@
+# MilesMickelson.com
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+#### Please feel free to view website at MilesMickelson.com-Project description coming soon, thanks for checking it out!
+
+* **Thank you**, ***-Miles Mickelson***
+
 <!-- TODO's -->
 
-Use gzip compression to improve performance
+----Deploy to MilesMickelson.com!!!
 
-Create site description in projects
+--Complete site description in projects
 
-Create Q&A section in about (interview questions)
+--Add accrediting article in site description or footer?
 
-Add favicon
+--Full Accessibility testing?
 
-Add accrediting article in footer for icons, etc.
+-Use gzip compression to improve performance
+  "parcel-plugin-compress"
+  "express-static-gzip"
 
-Add animations to expand+collapse buttons, pic borders, navbar icons when hovering/active/current page
+Add animation/styling to pic borders
 
+Setup HMR, watch command, -& with Express?
 
+Uninstall any unused dependencies-use global depcheck module
 
+Implement dynamic animations of nav-icons based on path/location instead of boolean
 
-Test Google Analytics upon deployment to .com
+ScrollToTop takes you to Navbar em text labels
 
-<!-- ({ filter: shouldCompress })
-function shouldCompress(req, res) {
-  if (req.headers['x-no-compression']) {
-    return false;
-  }
-  return compression.filter(req, res);
-} -->
-<!-- //"dev": "parcel <your entry file>",
-//"build": "parcel build <your entry file>" -->
-<!-- //original scripts DO NOT DELETE
-//"start": "node server",
-//"build": "parcel build src/index.html --no-cache",
-//"watch": "NODE_ENV=production parcel watch src/index.html",
-//"test": "echo \"Error: no test specified\" && exit 1"
+Ignore Lighthouses Best Practices Audit Score: HTTPS has higher performance..?
 
-//original src index.js DO NOT DELETE
-// import React from 'react';
-// import { render } from 'react-dom';
-// import App from './app';
-// import './css/style.scss';
-// function renderApp() {
-//   render(<App />, root);
-// }
-
-// renderApp(); -->
+<!-- Original Scripts
+"start": "node server",
+"build": "parcel build src/index.html --no-cache",
+"watch": "NODE_ENV=production parcel watch src/index.html",
+"test": "echo \"Error: no test specified\" && exit 1" -->

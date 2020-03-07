@@ -8,79 +8,89 @@ export default class Projects extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3>Projects</h3>
-          <h4>
-            <img className='dagger1' src={ dagger } alt='dagger' />
-            MilesMickelson.com
-            <img className='dagger2' src={ dagger } alt='dagger' />
-          </h4>
-          <img id='audit' src={ audit } alt='audit score' />
-          <p>
-            Description coming soon, thank you for your interest.&nbsp;
-            <a
-              href='https://github.com/MilesMickelson/MilesMickelson.github.io'
-              className='post-link'
-              rel='noopener noreferrer'
-              target='_blank'
-              title='Miles Mickelsons Portfolio Project Github Repository'
-            >
-            ~View repository here.
-            </a>
-          </p>
-          <h4>
-            <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
-            The Total Machine
-            <img className='dagger2' src={ dagger } alt='dagger' />
-          </h4>
-          <p>
-            At the 2018 Tealium Hackathon event, my team built a data statistic&nbsp;
-            display tool to give Tealium an added service for their clients,&nbsp;
-            supplying them a way to achieve coordinated marketing strategies&nbsp;
-            through a simple information viewing system. As a result of our&nbsp;
-            quality interface, overall presentation, and camaraderie, we finished&nbsp;
-            in the top 3 finalists. My responsibilities were designing the user&nbsp;
-            interface and presenting our project to a panel judges.&nbsp;
-            <a
-              href='https://github.com/MilesMickelson/tealium-hackathon'
-              rel='noopener noreferrer'
-              target='_blank'
-              title='The Total Machine Project Github Repository'
-            >
-            ~View repository here.
-            </a>
-          </p>
-          <h4>
-            <img className='dagger1' src={ dagger } alt='dagger' />
-            Ranger Radar
-            <img className='dagger2' src={ dagger } alt='dagger' />
-          </h4>
-          <p>
-            At the 2019 San Diego Zoo Global Hackathon event, my team built a data statistic&nbsp;
-            display tool to give Tealium an added service for their clients,&nbsp;
-            supplying them a way to achieve coordinated marketing strategies&nbsp;
-            through a simple information viewing system. As a result of our&nbsp;
-            quality interface, overall presentation, and camaraderie, we finished&nbsp;
-            in the top 3 finalists. My responsibilities were designing the user&nbsp;
-            interface and presenting our project to a panel judges.&nbsp;
-            <a
-              href='https://github.com/MilesMickelson/Ranger-Radar'
-              className='post-link'
-              rel='noopener noreferrer'
-              target='_blank'
-              title='Ranger Radar Project Github Repository'
-            >
-            ~View repository here.
-            </a>
-          </p>
-          <h4>
-            <img className='dagger1' src={ dagger } alt='dagger' />
-            San Diego Code School Highlights
-            <img className='dagger2' src={ dagger } alt='dagger' />
-          </h4>
-          <p>
-            I learned so much going to code school from every single project completed and article&nbsp;
-            read; listed below are just a few of the ones I'm most proud of with a link to their Github repo.
-          </p>
+          <header className='center-wrap'>
+            <h3>Projects</h3>
+          </header>
+          <section className='center-wrap'>
+            <h4>
+              <img className='dagger1' src={ dagger } alt='dagger' />
+              MilesMickelson.com
+              <img className='dagger2' src={ dagger } alt='dagger' />
+            </h4>
+            <img id='audit' src={ audit } alt='audit score' />
+            <p>
+              Description coming soon, thank you for your interest.&nbsp;
+              <a
+                href='https://github.com/MilesMickelson/MilesMickelson.github.io'
+                className='post-link'
+                rel='noopener noreferrer'
+                target='_blank'
+                title='Miles Mickelsons Portfolio Project Github Repository'
+              >
+              ~View repository here.
+              </a>
+            </p>
+            </section>
+          <section className='center-wrap'>
+            <h4>
+              <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+              The Total Machine
+              <img className='dagger2' src={ dagger } alt='dagger' />
+            </h4>
+            <p>
+              At the 2018 Tealium Hackathon event, my team built a data statistic&nbsp;
+              display tool to give Tealium an added service for their clients,&nbsp;
+              supplying them a way to achieve coordinated marketing strategies&nbsp;
+              through a simple information viewing system. As a result of our&nbsp;
+              quality interface, overall presentation, and camaraderie, we finished&nbsp;
+              in the top 3 finalists. My responsibilities were designing the user&nbsp;
+              interface and presenting our project to a panel judges.&nbsp;
+              <a
+                href='https://github.com/MilesMickelson/tealium-hackathon'
+                rel='noopener noreferrer'
+                target='_blank'
+                title='The Total Machine Project Github Repository'
+              >
+              ~View repository here.
+              </a>
+            </p>
+          </section>
+          <section className='center-wrap'>
+            <h4>
+              <img className='dagger1' src={ dagger } alt='dagger' />
+              Ranger Radar
+              <img className='dagger2' src={ dagger } alt='dagger' />
+            </h4>
+            <p>
+              At the 2019 San Diego Zoo Global Hackathon event, my team built a data statistic&nbsp;
+              display tool to give Tealium an added service for their clients,&nbsp;
+              supplying them a way to achieve coordinated marketing strategies&nbsp;
+              through a simple information viewing system. As a result of our&nbsp;
+              quality interface, overall presentation, and camaraderie, we finished&nbsp;
+              in the top 3 finalists. My responsibilities were designing the user&nbsp;
+              interface and presenting our project to a panel judges.&nbsp;
+              <a
+                href='https://github.com/MilesMickelson/Ranger-Radar'
+                className='post-link'
+                rel='noopener noreferrer'
+                target='_blank'
+                title='Ranger Radar Project Github Repository'
+              >
+              ~View repository here.
+              </a>
+            </p>
+          </section>
+          <section className='center-wrap'>
+            <h4>
+              <img className='dagger1' src={ dagger } alt='dagger' />
+              San Diego Code School Highlights
+              <img className='dagger2' src={ dagger } alt='dagger' />
+            </h4>
+            <p>
+              I learned so much going to code school from every single project completed and article&nbsp;
+              read; listed below are just a few of the ones I'm most proud of with a link to their Github repo.
+            </p>
+          </section>
           <div className='project-list-wrap'>
             <ul>
               <li>
