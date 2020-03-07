@@ -4,7 +4,7 @@
   "description": "Personal Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node server/listener.js",
     "watch": "parcel watch src/index.html --target node --bundle-node-modules",
     "dev": "cross-env NODE_ENV=development parcel build src/index.html --no-cache",
     "build": "cross-env NODE_ENV=production parcel build src/index.html --no-cache"
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/MilesMickelson/MilesMickelson.github.io/issues"
   },
-  "homepage": "https://github.com/MilesMickelson/MilesMickelson.github.io#readme",
+  "homepage": "https://github.com/MilesMickelson/MilesMickelson.github.io",
   "postcss": {
     "modules": false,
     "plugins": {
