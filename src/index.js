@@ -4,18 +4,15 @@ import App from './app';
 
 import './css/style.scss';
 
-//original src index.js DO NOT DELETE
-// import React from 'react';
-// import { render } from 'react-dom';
-// import App from './app';
-// import './css/style.scss';
-// function renderApp() {
-//   render(<App />, root);
-// }
-// renderApp(); -->
+const ghpages = require('gh-pages');
 
 render(<App />, document.getElementById('root'));
 
 if (module.hot) {
   module.hot.accept();
 }
+
+ghpages.publish('dist', {
+  branch: 'master',
+  repo: 'https://github.com/MilesMickelson/MilesMickelson.github.io.git'
+}, callback);
